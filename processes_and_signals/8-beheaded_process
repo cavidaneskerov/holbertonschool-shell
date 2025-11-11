@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#ps aux
+kill "$(pgrep -f 7-highlander)"
