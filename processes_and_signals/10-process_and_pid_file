@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #ps aux
-echo $$ > /var/run/myscript.pid
+touch /var/run/myscript.pid
 trap "rm /var/run/myscript.pid " SIGQUIT
 trap "echo 'I hate the kill command' ; rm /var/run/myscript.pid " SIGTERM
 trap "echo 'Y U no love me?!'" SIGINT
